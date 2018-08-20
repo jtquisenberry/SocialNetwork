@@ -1,0 +1,7 @@
+
+
+venv configured with
+
+    pip install py2neo
+    pip install neo4j
+    pip install neo4j-driver
