@@ -41,3 +41,8 @@ if __name__ == "__main__":
 
 
     app = create_app(bolt_uri=bolt_uri)
+    app.run(host='0.0.0.0', port=80)
+=======
+    app = create_app()
+    app.run(host='0.0.0.0', port=80)
+>>>>>>> 844d3fdb9bfc3a8280178b57e804f7eb04f8c196
