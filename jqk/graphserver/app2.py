@@ -1,11 +1,11 @@
-import os
 import sys
-import argparse
+sys.path.append('../../')
+import os
 
 from flask import Flask
 
 
-def create_app(test_config=None, bolt_uri = ''):
+def create_app(test_config=None):
     """Create and configure an instance of the Flask application."""
     app = Flask(__name__, instance_relative_config=True)
 
@@ -19,7 +19,6 @@ def create_app(test_config=None, bolt_uri = ''):
     # apply the blueprints to the app
     #from graphserver. import graph
     import graph
-    graph.bolt_uri = bolt_uri
     app.register_blueprint(graph.bp)
 
     # make url_for('index') == url_for('blog.index')
@@ -32,12 +31,5 @@ def create_app(test_config=None, bolt_uri = ''):
 
 
 if __name__ == "__main__":
-
-    bolt_uri = 'bolt://localhost:7687'
-
-    if len(sys.argv) >= 2:
-        bolt_uri = sys.argv[1]
-
-
-    app = create_app(bolt_uri=bolt_uri)
-    app.run(host='0.0.0.0', port=80)
+    app = create_app()
+    app.run(host='0.0.0.0', port=8200)

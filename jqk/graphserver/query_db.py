@@ -4,8 +4,8 @@ from py2neo import Database
 
 class GraphResult:
 
-    def __init__(self):
-        self.graph = Graph('bolt://localhost:7687')
+    def __init__(self, bolt_uri):
+        self.graph = Graph(bolt_uri)
         self.relationships = []
 
     def get_entire_graph(self):

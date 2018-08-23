@@ -1,5 +1,4 @@
 Flask
 Redis
 neo4j-driver
-neo4j
 py2neo

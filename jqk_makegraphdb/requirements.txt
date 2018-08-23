@@ -1,7 +1,0 @@
-neo4j==1.7.0b1
-neo4j-driver==1.6.1
-neobolt==1.7.0b1
-neotime==1.0.0
-py2neo==4.0.0
-pytz==2018.5
-six==1.11.0

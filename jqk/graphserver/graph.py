@@ -9,6 +9,7 @@ from query_db import GraphResult
 
 
 bp = Blueprint('graph', __name__)
+bolt_uri = 'bolt://localhost:7687'
 
 
 @bp.route('/')
@@ -45,7 +46,7 @@ def updategraph():
     print('graph.updategraph')
 
 
-    result = GraphResult()
+    result = GraphResult(bolt_uri)
 
     if clickType == 'node':
         result.click_node(entityID)
