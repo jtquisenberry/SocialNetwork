@@ -1,0 +1,67 @@
+docker pull jquisenberry/graphdb:latest
+docker run --expose=7474 --expose=7687 --expose=7473 -p 7474:7474 -p 7687:7687 -p 7473:7473 jquisenberry/graphdb:latest
+docker ps
+docker inspect -f "{{ .NetworkSettings.IPAddress }}" d6cfb5a9484e
+
+docker run -p 4000:80 jquisenberry/graphweb:latest
+docker ps
+docker exec -it 1e92a75e38c8 /bin/bash
+
+python jqk/makegraphdb/app.py bolt://172.17.0.2:7687
+python jqk/graphserver/app.py bolt://172.17.0.2:7687
+
+
+
+
+
+docker build -t graphweb .
+docker run -p 4000:80 jqweb003
+docker container ls
+docker container stop 2530e6933172
+docker login
+
+
+
+PS E:\docker\d> docker exec -it 033f92b042c1 /bin/bash
+docker cp app3.py bb032617f51d:app/jqk/graphserver/app3.py
+docker cp app.py 1fa6f7fca62a:app/jqk/makegraphdb/app2.py
+
+
+docker run --expose=8200 -p 8200:8200 jquisenberry/jqweb003:latest
+docker ps
+docker exec -it 92db28cb1d66 /bin/bash
+docker cp app3.py 92db28cb1d66:app/jqk/graphserver/app3.py
+
+
+docker exec -it 93b237c40dd3 /bin/bash
+
+docker push jquisenberry/graphdb:latest
+docker run jquisenberry/graphdb:latest
+
+docker run --expose=7474 -p 7474:7474 jquisenberry/graphdb:latest
+docker run --expose=7474 --expose=7687 -p 7474:7474 -p 7687:7687 jquisenberry/graphdb:latest
+
+docker run --expose=7474 --expose=7687 -p 7474:7474 -p 7687:7687 neo4j:latest
+docker commit b84c7c684bf7 jquisenberry/graphdb:att1
+docker run --expose=7474 --expose=7687 --expose=7473 -p 7474:7474 -p 7687:7687 -p 7473:7473 jquisenberry/graphdb:latest
+
+docker commit ef7b4330986c jquisenberry/graphdb:att4
+docker run jquisenberry/graphdb:att4
+
+docker commit --change='VOLUME ["db:/data", "db:/conf"]' ef7b4330986c jquisenberry/graphdb:att5
+docker commit --change='VOLUME ["db:/data", "db:/conf"]' --change='ENV NEO4J_AUTH=none' 9341cf39105d jquisenberry/graphdb:latest
+
+env NEO4J_AUTH=neo4j/<password>
+
+
+
+https://forums.docker.com/t/persist-changes-to-new-image-neo4j/56711https://forums.docker.com/t/persist-changes-to-new-image-neo4j/56711
+
+
+
+
+
+
+
+cd jqk/makegraphdb
+python app.py bolt://172.17.0.2:7687

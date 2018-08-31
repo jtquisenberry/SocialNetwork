@@ -1,0 +1,31 @@
+*********************************
+docker-compose.yml
+*********************************
+
+version: '3'
+
+services:
+
+  db:
+    image: neo4j:latest
+    ports:
+      - '7474:7474'
+      - '7687:7687'
+    volumes:
+      - 'db:/data'
+      - 'db:/conf'
+
+volumes:
+  db:
+
+  
+*****************************************************************
+
+docker-compose up
+docker run --expose=7474 --expose=7687 --expose=7473 -p 7474:7474 -p 7687:7687 -p 7473:7473 graphdb
+docker commit --change='VOLUME ["db:/data", "db:/conf"]' --change='ENV NEO4J_AUTH=none' 9341cf39105d jquisenberry/graphdb:latest
+
+?tag???
+
+docker push jquisenberry/graphdb:latest
+docker run jquisenberry/graphdb:latest
