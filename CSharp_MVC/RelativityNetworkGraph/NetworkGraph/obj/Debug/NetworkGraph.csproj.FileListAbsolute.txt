@@ -27,3 +27,31 @@ E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NetworkGraph
 E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NetworkGraph\obj\Debug\NetworkGraph.pdb
 E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NetworkGraph\bin\RelativityCommon.dll
 E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NetworkGraph\bin\RelativityCommon.pdb
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\NetworkGraph.dll.config
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\NetworkGraph.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\NetworkGraph.pdb
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\Antlr3.Runtime.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\Microsoft.Web.Infrastructure.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\Newtonsoft.Json.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\RelativityCommon.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Helpers.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Mvc.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Optimization.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Razor.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.WebPages.Deployment.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.WebPages.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.WebPages.Razor.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\WebGrease.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\RelativityCommon.pdb
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\Newtonsoft.Json.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Helpers.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Mvc.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Optimization.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.Razor.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.WebPages.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.WebPages.Deployment.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\System.Web.WebPages.Razor.xml
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\bin\Antlr3.Runtime.pdb
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\obj\Debug\NetworkGraph.csprojResolveAssemblyReference.cache
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\obj\Debug\NetworkGraph.dll
+E:\Development\Git\SocialNetwork\CSharp_MVC\RelativityNetworkGraph\NetworkGraph\obj\Debug\NetworkGraph.pdb
