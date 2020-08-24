@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "FileSystem";
+}
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Report 20201210-142203</h2>
+
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayName("ArtifactID")
+                    </th>
+                    <th>
+                        @Html.DisplayName("BegDoc")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Not Redacted")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Unacceptable File Type")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Multiple Modified Natives")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Invalid Filename")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Missing Modified Native")
+                    </th>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        1064239
+                    </td>
+                    <td>
+                        ABC-00000001
+                    </td>
+                    <td class="failcell">
+                        FAIL
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        1064240
+                    </td>
+                    <td>
+                        ABC-00000002
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                    <td class="failcell">
+                        FAIL
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                    <td>
+                        pass
+                    </td>
+                </tr>
+
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div> <!-- /container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="@Url.Content("~/Scripts/app.js")"></script> 
+

@@ -1,0 +1,30 @@
+﻿@model System.Exception
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <hgroup>
+        <h1>Custom Error Page</h1>
+        <h2>An error occurred while processing your request.</h2>
+    </hgroup>
+    <h3>Begin Message</h3>
+    @ViewBag.Message
+
+    @if (Model != null)
+    {
+        <div>
+            @Model.Message
+            <br />
+            @Model.Data.ToString()
+            <br />
+            @Model.StackTrace
+
+        </div>
+    }
+    <h3>End Message</h3>
+</body>
+</html>

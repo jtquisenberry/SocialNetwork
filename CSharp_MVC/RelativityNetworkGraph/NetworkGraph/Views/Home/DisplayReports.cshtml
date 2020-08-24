@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "FileSystem";
+}
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Reports</h2>
+
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Report Name")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Created On")
+                    </th>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        @Html.ActionLink("Report 20201210-142203", "DisplayReport", "Home")
+                        
+                    </td>
+                    <td>
+                        12/10/2020 2:22:03 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Report 20201211-100723", "DisplayReport", "Home")
+                    </td>
+                    <td>
+                        12/11/2020 10:07:23 AM
+                    </td>
+                </tr>
+
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div> <!-- /container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="@Url.Content("~/Scripts/app.js")"></script> 
+

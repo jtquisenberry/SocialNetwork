@@ -1,0 +1,1 @@
+window.WebForm_GetElementById('_externalPage').contentWindow.MyAppUrlSettings.workspaceInfo

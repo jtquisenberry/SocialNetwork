@@ -1,0 +1,197 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model NetworkGraph.Models.WorkspaceInfo
+
+
+
+<div class="container">
+    <a href="# "class="toggleTables">Toggle Tables</a>
+    <div class="row">
+        <div class="col-lg-12">
+            <a id="hideworkspaceKV">Toggle Workspace Key/Value</a>
+            <h2 class="workspaceKV">Workspace Key - Value Pairs</h2>
+
+            <table class="table workspaceKV">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Key")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Value")
+                    </th>
+
+                </tr>
+
+                @foreach (var item in Model.Keys)
+                {
+                    <tr>
+                        <td>
+                            @item.ToString()
+                        </td>
+                        <td>
+                            @Model.Session[@item.ToString()]
+                        </td>
+
+                    </tr>
+                }
+
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a id="hideworkspaceContext">Toggle Context</a>
+            <h2 class="workspaceContext">Context</h2>
+
+            <table class="table workspaceContext">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Variable")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Value")
+                    </th>
+
+                </tr>
+
+
+                @{
+                    <tr>
+                        <td>
+                            CustomLastError
+                        </td>
+                        <td>
+                            @Model.CustomLastError
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Workspace Server Name
+                        </td>
+                        <td>
+                            @Model.WorkspaceServerName
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Workspace Database Name
+                        </td>
+                        <td>
+                            @Model.WorkspaceDatabaseName
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Workspace Is Master Database
+                        </td>
+                        <td>
+                            @Model.WorkspaceIsMasterDatabase
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Master Server Name
+                        </td>
+                        <td>
+                            @Model.MasterServerName
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Master Database Name
+                        </td>
+                        <td>
+                            @Model.MasterDatabaseName
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Master Is Master Database
+                        </td>
+                        <td>
+                            @Model.MasterIsMasterDatabase
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Case Name
+                        </td>
+                        <td>
+                            @Model.CaseName
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Authentication Token
+                        </td>
+                        <td>
+                            @Model.AuthenticationToken
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Active User ArtifactID
+                        </td>
+                        <td>
+                            @Model.ActiveUserArtifactID
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Active User Audit ArtifactID
+                        </td>
+                        <td>
+                            @Model.ActiveUserAuditArtifactID
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Active User Workspace ArtifactID
+                        </td>
+                        <td>
+                            @Model.ActiveUserWorkspaceArtifactID
+                        </td>
+
+                    </tr>
+
+                }
+
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</div> <!-- /container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="@Url.Content("~/Scripts/app.js")"></script> 

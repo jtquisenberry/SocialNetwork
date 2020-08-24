@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C94DF1AA-A136-4100-BBB3-9C9754392C31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetworkGraph_Storage</RootNamespace>
+    <AssemblyName>NetworkGraph_Storage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Relativity_Application\NetworkGraph002.png" />
+    <Content Include="Relativity_Application\NetworkGraph003.png" />
+    <Content Include="Relativity_Application\NetworkGraph004.png" />
+    <Content Include="Relativity_Application\NetworkGraph005.png" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Fake_Stored_Procedure.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Recipients.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Senders.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Case_Graph10.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Case_Graph15.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Case_Graph20.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Case_Top_Pairs.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Case_Top_Recipients.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Case_Top_Senders.sql" />
+    <Content Include="SQL_Scripts\TableCreation\Create_SN_Pairs.sql" />
+    <Content Include="SQL_Scripts\TableCreation\NewRecursiveCTE.sql" />
+    <Content Include="SQL_Scripts\Testing_Gen10_Filter.sql" />
+    <Content Include="SQL_Scripts\Testing_Gen15.sql" />
+    <Content Include="SQL_Scripts\Testing_Gen15_Filter.sql" />
+    <Content Include="SQL_Scripts\Testing_Gen20.sql" />
+    <Content Include="SQL_Scripts\Testing_Gen20_Filter.sql" />
+    <Content Include="SQL_Scripts\Testing_No_Scope_Generation10.sql" />
+    <Content Include="SQL_Scripts\Trying_No_Scope_Generation15.sql" />
+    <Content Include="SQL_Scripts\Two_Entities.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration10Filter.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration10_Case.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration15Filter.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration15_Case.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration20Filter.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration20_Case.sql" />
+    <Content Include="SQL_Scripts\TableCreation\usp_SN_Scope_On_Pair.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration20.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetDocumentsFromEdge.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration10.sql" />
+    <Content Include="SQL_Scripts\usp_SN_GetGraphGeneration15.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Relativity_Application\RA_NetworkGraph_20170701004943.rap" />
+    <None Include="Relativity_Application\RA_NetworkGraph_20170711180753.rap" />
+    <None Include="Relativity_Application\RA_NetworkGraph_20170922204943.rap" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

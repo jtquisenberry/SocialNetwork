@@ -1,0 +1,11 @@
+E:\Development\TFS_Quisenberry001\RelativityNetworkGraph\NativeRedactionCommon\obj\Debug\RelativityCommon.csprojResolveAssemblyReference.cache
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NativeRedactionCommon\obj\Debug\RelativityCommon.csprojResolveAssemblyReference.cache
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NativeRedactionCommon\bin\Debug\NativeRedactionCommon.dll
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NativeRedactionCommon\bin\Debug\NativeRedactionCommon.pdb
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NativeRedactionCommon\obj\Debug\NativeRedactionCommon.dll
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\NativeRedactionCommon\obj\Debug\NativeRedactionCommon.pdb
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\RelativityCommon\bin\Debug\RelativityCommon.dll
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\RelativityCommon\bin\Debug\RelativityCommon.pdb
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\RelativityCommon\obj\Debug\RelativityCommon.csprojResolveAssemblyReference.cache
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\RelativityCommon\obj\Debug\RelativityCommon.dll
+E:\Development\TFS_Quisenberry001 - Copy (2)\RelativityNetworkGraph\RelativityCommon\obj\Debug\RelativityCommon.pdb

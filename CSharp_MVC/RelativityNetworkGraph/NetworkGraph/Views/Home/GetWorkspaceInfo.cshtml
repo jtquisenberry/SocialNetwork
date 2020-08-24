@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model NetworkGraph.Models.WorkspaceInfo
+
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a id="hideworkspaceKV">Toggle Workspace Key/Value</a>
+            <h2 class="workspaceKV">Workspace Key - Value Pairs</h2>
+
+            <table class="table workspaceKV">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Key")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Value")
+                    </th>
+
+                </tr>
+
+                @foreach (var item in Model.Keys)
+                {
+                    <tr>
+                        <td>
+                            @item.ToString()
+                        </td>
+                        <td>
+                            @Model.Session[@item.ToString()]
+                        </td>
+
+                    </tr>
+                }
+
+            </table>
+
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a id="hideworkspaceContext">Toggle Context</a>
+            <h2 class="workspaceContext">Context</h2>
+
+            <table class="table workspaceContext" >
+                <tr>
+                    <th>
+                        @Html.DisplayName("Variable")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Value")
+                    </th>
+
+                </tr>
+
+                
+                @{
+                    <tr>
+                        <td>
+                            SQLStatement
+                        </td>
+                        <td>
+                            @Model.SQLStatement
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            CustomLastError
+                        </td>
+                        <td>
+                            @Model.CustomLastError
+                        </td>
+
+                    </tr>
+                }
+
+            </table>
+
+
+            <hr />  
+            @ViewBag.Message
+
+
+        </div>
+
+    </div>
+
+</div> <!-- /container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- <script src="~/Scripts/app.js"></script> -->
+
+
+<script src="@Url.Content("~/Scripts/app.js")"></script> 
+
+
+<!--Scripts.Render("~/Scripts/app.js")-->
+
