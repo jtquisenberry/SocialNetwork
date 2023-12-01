@@ -2,71 +2,62 @@
 <html>
 <head>
     <title>{% block title %}{% endblock %}</title>
-    <link href="Content/bootstrap.css" rel="stylesheet"/>
-    <link href="Content/site.css" rel="stylesheet"/>
-    <script src="Scripts/modernizr-2.8.3.js"></script>
+    <link href="static/css/bootstrap.css" rel="stylesheet"/>
+    <link href="static/css/site.css" rel="stylesheet"/>
+    <script src="static/js/modernizr-2.8.3.js"></script>
 </head>
 <body>
 
-    <div class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">DR Social Networking</a>
-                <!-- <a class="navbar-brand" href="#">NetworkGraph</a> -->
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a class="active" href="/">Home</a></li>
-                    <li><a href="/Home/RunHelper">Workspace Info</a></li>
-                   <!-- <li><a href="/Home/About">About</a></li> -->
-                   <!-- <li><a href="/Home/Contact">Contact</a></li> -->
-                   <!-- <li><a href="/Home/ViewSocialNetwork">Social Network</a></li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utilities <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="toggleTables">Toggle Tables</a></li>
-                            <li><a href="/Home/Contact">Contact</a></li>
-                            <li><a href="/Home/Contact">Contact</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="/Home/Contact">Contact</a></li>
-                            <li><a href="/Home/Contact">Contact</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li></li>
-                </ul>
-            </div><!--/.nav-collapse -->
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Social Networking</a>
+            <!-- <a class="navbar-brand" href="#">NetworkGraph</a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/Home/RunHelper">Workspace Info</a></li>
+                <!-- <li><a href="/Home/About">About</a></li> -->
+                <!-- <li><a href="/Home/Contact">Contact</a></li> -->
+                <!-- <li><a href="/Home/ViewSocialNetwork">Social Network</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Utilities <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="toggleTables">Toggle Tables</a></li>
+                        <li><a href="/Home/Contact">Contact</a></li>
+                        <li><a href="/Home/Contact">Contact</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="/Home/Contact">Contact</a></li>
+                        <li><a href="/Home/Contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li></li>
+            </ul>
+        </div><!--/.nav-collapse -->
 
-                <!-- Main component for a primary marketing message or call to action -->
+        <!-- Main component for a primary marketing message or call to action -->
 
-            </div>
     </div>
-    <div class="tall-container body-content" id="tall">
+</div>
+<div class="tall-container body-content" id="tall">
 
 
-
-
-
-
-
-
-<!-- <script type="text/javascript" src="Scripts/cytoscape.js"></script> -->
-<script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cose-bilkent/1.6.1/cytoscape-cose-bilkent.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="Scripts/app.js"></script>
-
-
-<style>
-
-</style>
+    <!-- <script type="text/javascript" src="static/js/cytoscape.js"></script> -->
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cose-bilkent/1.6.1/cytoscape-cose-bilkent.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
 
 
     <div id="mySidenav" class="sidenav">
@@ -91,7 +82,8 @@
             <div>
                 <div class="dropdown" style="display:inline-block;">
 
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="depthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="depthMenu" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
                         Graph Depth
                         <span class="caret"></span>
                     </button>
@@ -104,21 +96,25 @@
 
                 <div class="dropdown" style="display:inline-block;">
 
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
                         Table Type
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li><a href="#" onclick="setupTable('senders'); populateSenderTable2();">Top Senders</a></li>
-                        <li><a href="#" onclick="setupTable('recipients'); populateRecipientTable2();">Top Recipients</a></li>
-                        <li><a href="#" onclick="setupTable('sendersAndRecipients'); populatePairTable2();">Top Sender &#x27FA; Recipient Pairs</a></li>
+                        <li><a href="#" onclick="setupTable('recipients'); populateRecipientTable2();">Top
+                            Recipients</a></li>
+                        <li><a href="#" onclick="setupTable('sendersAndRecipients'); populatePairTable2();">Top Sender
+                            &#x27FA; Recipient Pairs</a></li>
                     </ul>
 
                 </div>
 
                 <div class="dropdown" style="display:inline-block;">
 
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
                         Maximum Participants
                         <span class="caret"></span>
                     </button>
@@ -133,12 +129,14 @@
 
                 <div class="dropdown" style="display:inline-block;">
 
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu3" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
                         Geometry
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="#" onclick="setCytoscapeStyle('concentricNoOverlap');">Concentric - No Overlap</a></li>
+                        <li><a href="#" onclick="setCytoscapeStyle('concentricNoOverlap');">Concentric - No Overlap</a>
+                        </li>
                         <li><a href="#" onclick="setCytoscapeStyle('concentricWithOverlap');">Concentric</a></li>
                         <li><a href="#" onclick="setCytoscapeStyle('grid');">Grid</a></li>
                         <li><a href="#" onclick="setCytoscapeStyle('spread');">Spread</a></li>
@@ -149,9 +147,7 @@
                 </div>
 
 
-
             </div>
-
 
 
             <div>
@@ -161,11 +157,11 @@
 
                 <table class="table" id="senderRecipientsTable">
                     <thead>
-                        <tr id="participantHeader">
-                            <th>Sender</th>
-                            <th>Recipient</th>
-                            <th>Count</th>
-                        </tr>
+                    <tr id="participantHeader">
+                        <th>Sender</th>
+                        <th>Recipient</th>
+                        <th>Count</th>
+                    </tr>
                     </thead>
                     <tbody id="senderRecipientsTableBody">
 
@@ -178,7 +174,8 @@
 
             <div>
                 <h3>Saved Search</h3>
-                <select id="savedSearchDropdown" name="cars" onchange="console.log(this.value); setSavedSearch(this.value)" style="font-size:18px;">
+                <select id="savedSearchDropdown" name="cars"
+                        onchange="console.log(this.value); setSavedSearch(this.value)" style="font-size:18px;">
                     <!--<option value="volvo">Volvo</option>-->
                 </select>
                 <!-- <button type="button" class="btn btn-default" onclick="runSavedSearch()">Execute</button> -->
@@ -186,7 +183,10 @@
 
             <div>
                 <h3>Developer Utilities</h3>
-                <button type="button" class="btn btn-danger" onclick="location.href='/Home/GetSavedSearches?Levels=2&amp;EntityID=90714&amp;WorkspaceArtifactID=666&amp;SocialNetworkDatabaseName=DR_wtemp_SocialNetwork_EDDS666'">getJson</button>
+                <button type="button" class="btn btn-danger"
+                        onclick="location.href='/Home/GetSavedSearches?Levels=2&amp;EntityID=90714&amp;WorkspaceArtifactID=666&amp;SocialNetworkDatabaseName=DR_wtemp_SocialNetwork_EDDS666'">
+                    getJson
+                </button>
             </div>
 
             <div>
@@ -200,16 +200,7 @@
         </div>
 
 
-
-
-
-
-
-
-
     </div>
-
-
 
 
     <div id='wrapper'>
@@ -229,161 +220,153 @@
 
     <script>
 
-                var MyAppUrlSettings = {
-                    GetGraphGeneration10: '/Home/GetGraphGeneration10',
-                    GetGraphGeneration15: '/Home/GetGraphGeneration15',
-                    GetGraphGeneration20: '/Home/GetGraphGeneration20',
-                    GetGraphGeneration10Case: '/Home/GetGraphGeneration10Case',
-                    GetGraphGeneration15Case: '/Home/GetGraphGeneration15Case',
-                    GetGraphGeneration20Case: '/Home/GetGraphGeneration20Case',
-                    GetGraphGeneration10Filter: '/Home/GetGraphGeneration10Filter',
-                    GetGraphGeneration15Filter: '/Home/GetGraphGeneration15Filter',
-                    GetGraphGeneration20Filter: '/Home/GetGraphGeneration20Filter',
-                    EdgeClicked1URL: '/Home/EdgeClicked1',
-                    GetSavedSearches: '/Home/GetSavedSearches',
-                    //RunSavedSearch: '/Home/RunSavedSearch',
-                    //RunSavedSearchFilterByParticipants: '/Home/RunSavedSearchFilterByParticipants',
-                    workspaceInfo: {"ArtifactID":666,"Session":[],"Keys":[],"SQLStatement":null,"CustomLastError":"","WorkspaceDatabaseName":"","WorkspaceIsMasterDatabase":"false","WorkspaceServerName":"","MasterDatabaseName":"","MasterIsMasterDatabase":"false","MasterServerName":"","CaseName":"","SocialNetworkDatabaseName":"DR_wtemp_SocialNetwork_EDDS666","RootCommunicator":90714,"Uri":"","BaseUri":"http://localhost:58638/","AuthenticationToken":"","IsInRelativity":1,"EdgeDocuments":null,"ActiveUserArtifactID":0,"ActiveUserAuditArtifactID":0,"ActiveUserWorkspaceArtifactID":0},
-                    socialNetworkDatabaseName: 'DR_wtemp_SocialNetwork_EDDS666',
-                    workspaceArtifactID: '666',
-                    workspaceServerName: '',
-                    RootCommunicator: '90714',
-                    SelectedValue: 'xxx',
-                    Depth: 1,
-                    currentTableType: 'sender',
-                    maximumParticipants: 2000000000,
-                    savedSearch: -1,
-                    senderEntityID: -1,
-                    recipientEntityID: -1
+        var MyAppUrlSettings = {
+            GetGraphGeneration10: '/Home/GetGraphGeneration10',
+            GetGraphGeneration15: '/Home/GetGraphGeneration15',
+            GetGraphGeneration20: '/Home/GetGraphGeneration20',
+            GetGraphGeneration10Case: '/Home/GetGraphGeneration10Case',
+            GetGraphGeneration15Case: '/Home/GetGraphGeneration15Case',
+            GetGraphGeneration20Case: '/Home/GetGraphGeneration20Case',
+            GetGraphGeneration10Filter: '/Home/GetGraphGeneration10Filter',
+            GetGraphGeneration15Filter: '/Home/GetGraphGeneration15Filter',
+            GetGraphGeneration20Filter: '/Home/GetGraphGeneration20Filter',
+            EdgeClicked1URL: '/Home/EdgeClicked1',
+            GetSavedSearches: '/Home/GetSavedSearches',
+            //RunSavedSearch: '/Home/RunSavedSearch',
+            //RunSavedSearchFilterByParticipants: '/Home/RunSavedSearchFilterByParticipants',
+            workspaceInfo: {"ArtifactID":666,"Session":[],"Keys":[],"SQLStatement":null,"CustomLastError":"","WorkspaceDatabaseName":"","WorkspaceIsMasterDatabase":"false","WorkspaceServerName":"","MasterDatabaseName":"","MasterIsMasterDatabase":"false","MasterServerName":"","CaseName":"","SocialNetworkDatabaseName":"DR_wtemp_SocialNetwork_EDDS666","RootCommunicator":90714,"Uri":"","BaseUri":"http://localhost:58638/","AuthenticationToken":"","IsInRelativity":1,"EdgeDocuments":null,"ActiveUserArtifactID":0,"ActiveUserAuditArtifactID":0,"ActiveUserWorkspaceArtifactID":0},
+            socialNetworkDatabaseName: 'DR_wtemp_SocialNetwork_EDDS666',
+            workspaceArtifactID: '666',
+            workspaceServerName: '',
+            RootCommunicator: '90714',
+            SelectedValue: 'xxx',
+            Depth: 1,
+            currentTableType: 'sender',
+            maximumParticipants: 2000000000,
+            savedSearch: -1,
+            senderEntityID: -1,
+            recipientEntityID: -1
 
-                } // Not really an error.
+        } // Not really an error.
 
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "500px";
-                    document.getElementById("wrapper").style.marginLeft = "500px";
-                    document.getElementById("mySidenav").style.overflow = 'auto';
-                    document.getElementById("threes").style.visibility = "hidden";
-                    document.getElementById("status").style.visibility = "hidden";
-                }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "500px";
+            document.getElementById("wrapper").style.marginLeft = "500px";
+            document.getElementById("mySidenav").style.overflow = 'auto';
+            document.getElementById("threes").style.visibility = "hidden";
+            document.getElementById("status").style.visibility = "hidden";
+        }
 
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("wrapper").style.marginLeft = "0";
-                    document.getElementById("mySidenav").style.overflow = 'hidden';
-                    document.getElementById("threes").style.visibility = "visible";
-                    document.getElementById("status").style.visibility = "visible";
-                }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("wrapper").style.marginLeft = "0";
+            document.getElementById("mySidenav").style.overflow = 'hidden';
+            document.getElementById("threes").style.visibility = "visible";
+            document.getElementById("status").style.visibility = "visible";
+        }
 
-                function toggleTop() {
+        function toggleTop() {
 
-                    if (document.getElementsByClassName("navbar")[0].style.display == "none")
-                    {
-                        document.getElementsByClassName("navbar")[0].style.display = "block";
-                        document.getElementById("wrapper").style.height = "0%";
-                        setupGraph();
-                    }
-                    else
-                    {
-                        document.getElementsByClassName("navbar")[0].style.display = "none"
-                        document.getElementById("wrapper").style.height = "100%";
-                        //document.getElementById("tall").style.height = "100%";
-                        setupGraph();
-                    }
-
-
-
-                    //document.getElementsByClassName("navbar")[0].style.height = "0px";
-                }
-
-                function toggleRelativity() {
-
-                    if ($(window.top.document.getElementById('_headerOuterTableRow')).is(":visible") == true)
-                    {
-                        $(window.top.document.getElementById('_headerOuterTableRow')).hide();
-
-                        var inside = window.top.document.getElementById('_externalPage');
-                        if (!(inside == null) && !(typeof inside === "undefined"))
-                        {
-                            $(inside).height($(inside).height() + 84);
-                        }
-
-                        setupGraph();
-                    }
-                    else
-                    {
-                        $(window.top.document.getElementById('_headerOuterTableRow')).show();
-
-
-                        var inside = window.top.document.getElementById('_externalPage');
-                        if (!(inside == null) && !(typeof inside === "undefined"))
-                        {
-                            $(inside).height($(inside).height() - 84);
-                        }
-
-
-                        setupGraph();
-                    }
+            if (document.getElementsByClassName("navbar")[0].style.display == "none")
+            {
+                document.getElementsByClassName("navbar")[0].style.display = "block";
+                document.getElementById("wrapper").style.height = "0%";
+                setupGraph();
+            }
+            else
+            {
+                document.getElementsByClassName("navbar")[0].style.display = "none"
+                document.getElementById("wrapper").style.height = "100%";
+                //document.getElementById("tall").style.height = "100%";
+                setupGraph();
+            }
 
 
 
-                    //document.getElementsByClassName("navbar")[0].style.height = "0px";
-                }
+            //document.getElementsByClassName("navbar")[0].style.height = "0px";
+        }
 
+        function toggleRelativity() {
 
+            if ($(window.top.document.getElementById('_headerOuterTableRow')).is(":visible") == true)
+            {
+                $(window.top.document.getElementById('_headerOuterTableRow')).hide();
 
-                //Register a listener for the end of the transition of wrapper.
-                (function () {
-                    var e = document.getElementById('wrapper');
-
-                    function whichTransitionEvent() {
-                        var t;
-                        var el = document.createElement('fakeelement');
-                        var transitions = {
-                            'transition': 'transitionend',
-                            'OTransition': 'oTransitionEnd',
-                            'MozTransition': 'transitionend',
-                            'WebkitTransition': 'webkitTransitionEnd'
-                        }
-
-                        for (t in transitions) {
-                            if (el.style[t] !== undefined) {
-                                return transitions[t];
-                            }
-                        }
-                    }
-
-                    var transitionEvent = whichTransitionEvent();
-                    transitionEvent && e.addEventListener(transitionEvent, function () {
-                        //alert('Transition complete!  This is the callback, no library needed!');
-                        setupGraph();
-                    });
-
-                    startFade = function () {
-                        e.className += ' hide';
-                    }
-                })();
-
-
-                window.addEventListener("resize", resizeWindow);
-
-                function resizeWindow()
+                var inside = window.top.document.getElementById('_externalPage');
+                if (!(inside == null) && !(typeof inside === "undefined"))
                 {
-                    setupGraph();
+                    $(inside).height($(inside).height() + 84);
                 }
 
+                setupGraph();
+            }
+            else
+            {
+                $(window.top.document.getElementById('_headerOuterTableRow')).show();
+
+
+                var inside = window.top.document.getElementById('_externalPage');
+                if (!(inside == null) && !(typeof inside === "undefined"))
+                {
+                    $(inside).height($(inside).height() - 84);
+                }
+
+
+                setupGraph();
+            }
+
+
+
+            //document.getElementsByClassName("navbar")[0].style.height = "0px";
+        }
+
+
+
+        //Register a listener for the end of the transition of wrapper.
+        (function () {
+            var e = document.getElementById('wrapper');
+
+            function whichTransitionEvent() {
+                var t;
+                var el = document.createElement('fakeelement');
+                var transitions = {
+                    'transition': 'transitionend',
+                    'OTransition': 'oTransitionEnd',
+                    'MozTransition': 'transitionend',
+                    'WebkitTransition': 'webkitTransitionEnd'
+                }
+
+                for (t in transitions) {
+                    if (el.style[t] !== undefined) {
+                        return transitions[t];
+                    }
+                }
+            }
+
+            var transitionEvent = whichTransitionEvent();
+            transitionEvent && e.addEventListener(transitionEvent, function () {
+                //alert('Transition complete!  This is the callback, no library needed!');
+                setupGraph();
+            });
+
+            startFade = function () {
+                e.className += ' hide';
+            }
+        })();
+
+
+        window.addEventListener("resize", resizeWindow);
+
+        function resizeWindow()
+        {
+            setupGraph();
+        }
 
 
     </script>
 
 
-
-
-
-
-
-        </div>
-
-
+</div>
 
 
 <div class="container">
@@ -396,14 +379,14 @@
     </div>
 </footer>
 
-<script src="Scripts/jquery-3.1.1.js"></script>
-<script src="Scripts/bootstrap.js"></script>
-<script src="Scripts/respond.js"></script>
-<script src="Scripts/app.js"></script>
-<script src="Scripts/appX.js"></script>
-<script src="Scripts/cytoscape.js"></script>
-<script src="Scripts/weaver.min.js"></script>
-<script src="Scripts/cytoscape-spread.js"></script>
+<script src="static/js/jquery-3.1.1.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/respond.js"></script>
+<script src="static/js/app.js"></script>
+<script src="static/js/appX.js"></script>
+<script src="static/js/cytoscape.js"></script>
+<script src="static/js/weaver.min.js"></script>
+<script src="static/js/cytoscape-spread.js"></script>
 <script src="static/js/cytoscape-cose-bilkent.js"></script>
 
 
