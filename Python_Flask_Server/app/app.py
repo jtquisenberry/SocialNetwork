@@ -10,6 +10,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    args = request.args
+    print(args)  # If arguments are passed with GET
     return render_template('home.html')
 
 @app.route('/product')

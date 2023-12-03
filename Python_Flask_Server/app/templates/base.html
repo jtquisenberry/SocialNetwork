@@ -19,7 +19,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom-lightmode">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Social Networking</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,58 +62,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-custom">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Social Networking</a>
-            <!-- <a class="navbar-brand" href="#">NetworkGraph</a> -->
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a class="active" href="/">Home</a></li>
-                <li><a href="/Home/RunHelper">Workspace Info</a></li>
-                <!-- <li><a href="/Home/About">About</a></li> -->
-                <!-- <li><a href="/Home/Contact">Contact</a></li> -->
-                <!-- <li><a href="/Home/ViewSocialNetwork">Social Network</a></li> -->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Utilities <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="toggleTables">Toggle Tables</a></li>
-                        <li><a href="/Home/Contact">Contact</a></li>
-                        <li><a href="/Home/Contact">Contact</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="/Home/Contact">Contact</a></li>
-                        <li><a href="/Home/Contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-
-        <!-- Main component for a primary marketing message or call to action -->
-
-    </div>
-</nav>
 <div class="tall-container body-content" id="tall">
 
 
@@ -276,7 +224,7 @@
         <div id='threes'>
             <span style="font-size:30px;cursor:pointer;display:inline" onclick="openNav()">&#9776;</span>
             <span style="font-size:30px;cursor:pointer;display:inline" onclick="toggleTop()">&#9777;</span>
-            <span style="font-size:30px;cursor:pointer;display:inline" onclick="toggleRelativity()">&#9778;</span>
+            <span style="font-size:30px;cursor:pointer;display:inline" onclick="nightMode()">&#9778;</span>
         </div>
 
         <div id='status'>
@@ -355,40 +303,9 @@
             //document.getElementsByClassName("navbar")[0].style.height = "0px";
         }
 
-        function toggleRelativity() {
-
-            if ($(window.top.document.getElementById('_headerOuterTableRow')).is(":visible") == true)
-            {
-                $(window.top.document.getElementById('_headerOuterTableRow')).hide();
-
-                var inside = window.top.document.getElementById('_externalPage');
-                if (!(inside == null) && !(typeof inside === "undefined"))
-                {
-                    $(inside).height($(inside).height() + 84);
-                }
-
-                setupGraph();
-            }
-            else
-            {
-                $(window.top.document.getElementById('_headerOuterTableRow')).show();
-
-
-                var inside = window.top.document.getElementById('_externalPage');
-                if (!(inside == null) && !(typeof inside === "undefined"))
-                {
-                    $(inside).height($(inside).height() - 84);
-                }
-
-
-                setupGraph();
-            }
-
-
-
-            //document.getElementsByClassName("navbar")[0].style.height = "0px";
+        function nightMode() {
+            alert("night mode!");
         }
-
 
 
         //Register a listener for the end of the transition of wrapper.

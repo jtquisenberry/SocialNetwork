@@ -249,15 +249,30 @@ tr:hover td{
     margin-left:20px;
 }
 
-
-.bg-custom
+.bg-custom-lightmode
 {
-    background-color:rgb(246, 142, 39);
-    color:red;
+    background-color: #f8f9fa !important;
 }
 
 
+.bg-custom-darkmode
+{
+    background-color: #13164c !important;
+}
 
+
+.navbar-darkmode
+{
+    --bs-navbar-color: #ffffff !important;
+    --bs-navbar-hover-color: #ffffff !important;
+    --bs-navbar-disabled-color #ffffff !important;
+    --bs-navbar-active-color:  #ffffff !important;
+}
+
+.navbar-brand-darkmode
+{
+    color: #ffffff !important;
+}
 
 
 
