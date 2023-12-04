@@ -2,8 +2,8 @@
 cytoscapeOptions = {
 'elements': {
     'nodes': [
-        {'data': {"id": 1, "label": "alpha", "group": 1}, 'style': {'width': '20', 'height': '20', 'font-size': '8px'}}
-        , {'data': {"id": 2, "label": "bravo", "group": 2}}
+        {'data': {"id": 1, "label": "cows", "group": 1}, 'style': {'width': '20', 'height': '20', 'font-size': '8px'}}
+        , {'data': {"id": 2, "label": "pigs", "group": 2}}
     ],
 
     'edges': [

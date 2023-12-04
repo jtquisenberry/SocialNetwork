@@ -88,7 +88,12 @@ var cytoscapeOptions = {
 
 };
 
-var scopeResult = {};
+var scopeResult = {
+    layout: {
+        'name': 'concentric',
+	    'minNodeSpacing': 10,
+	    'avoidOverlap': true
+  }};
 
 function setCytoscapeStyle(whichLayout) {
 
@@ -793,7 +798,7 @@ function edgeClicked1(edgeID)
         type: 'GET',
         success: function (data) {
             console.log(data);
-            window.open(data, '', 'width=10000, height=10000, resizable=1');
+            //window.open(data, '', 'width=10000, height=10000, resizable=1');
 
 
             

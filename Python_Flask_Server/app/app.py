@@ -21,39 +21,160 @@ def contact():
 
 @app.route('/getGraphGeneration10')
 def getGraphGeneration10():
-    return jsonify(cytoscapeOptions)
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration15')
 def getGraphGeneration15():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration20')
 def getGraphGeneration20():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration10Case')
 def getGraphGeneration10Case():
-    return jsonify({})
+
+    args = request.args
+    print(args)
+
+    scopeResult = {
+        'Pairs': [{'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb', 'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
+
+
 
 @app.route('/getGraphGeneration15Case')
 def getGraphGeneration15Case():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration20Case')
 def getGraphGeneration20Case():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration10Filter')
 def getGraphGeneration10Filter():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration15Filter')
 def getGraphGeneration15Filter():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/getGraphGeneration20Filter')
 def getGraphGeneration20Filter():
-    return jsonify({})
+    scopeResult = {
+        'Pairs': [
+            {'SenderEntityID': 33333, 'RecipientEntityID': 44444, 'SenderDisplay': 'aaaaa', 'RecipientDisplay': 'bbbbb',
+             'Count': 42}],
+        'Senders': [{'SenderEntityID': 33333, 'SenderDisplay': 'aaaaa', 'Count': 42}],
+        'Recipients': [{'SenderEntityID': 44444, 'SenderDisplay': 'bbbbb', 'Count': 77}]
+    }
+
+    result = {
+        'scopeResult': scopeResult,
+        'cytoscapeOptions': cytoscapeOptions
+    }
+
+    return jsonify(result)
 
 @app.route('/edgeClicked1')
 def edgeClicked1():
@@ -61,10 +182,7 @@ def edgeClicked1():
 
 @app.route('/getSavedSearches')
 def getSavedSearches():
-    return jsonify({})
-
-
-
+    return jsonify([{'ArtifactID': 0, 'TextIdentifier': 'Search 1'}, {'ArtifactID': 1, 'TextIdentifier': 'Search 2'}])
 
 if __name__ == '__main__':
     app.app_context().push()
