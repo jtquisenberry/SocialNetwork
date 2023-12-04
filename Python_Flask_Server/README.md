@@ -1,5 +1,11 @@
 # Social Network with Python Flask and Bootstrap 5
 
+# Dependencies
+
+`cytoscape` uses `weaver`, which is a JavaScript parallelism library.
+
+
+
 # Conversion of buttons with dropdown to Bootstrap 5
 
 * Replace `data-toggle` with `data-bs-toggle`
