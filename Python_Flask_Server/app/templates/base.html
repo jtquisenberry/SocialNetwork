@@ -8,212 +8,63 @@
 </head>
 <body>
 
-<!-- <nav class="navbar navbar-default navbar-static-top"> -->
-
-
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom-lightmode">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Social Networking</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Utilities
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item toggleTables">Toggle Tables</a></li>
-            <li><a class="dropdown-item" href="/Home/Contact">Contact</a></li>
-            <li><a class="dropdown-item" href="/Home/Contact">Contact</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <!-- <textarea class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></textarea>
-        <button class="btn btn-outline-success" type="submit">Search</button> -->
-        <input class="form-control me-2" id="query" name="query" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Social Networking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Utilities
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item toggleTables">Toggle Tables</a></li>
+                        <li><a class="dropdown-item" href="/Home/Contact">Contact</a></li>
+                        <li><a class="dropdown-item" href="/Home/Contact">Contact</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <!-- <textarea class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></textarea>
+                <button class="btn btn-outline-success" type="submit">Search</button> -->
+                <input class="form-control me-2" id="query" name="query" type="search" placeholder="Search"
+                       aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
     </div>
-  </div>
 </nav>
 
 
-
 <div class="tall-container body-content" id="tall">
-
-
-    <!-- <script type="text/javascript" src="static/js/cytoscape.js"></script> -->
-    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cose-bilkent/1.6.1/cytoscape-cose-bilkent.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
-
-
-
-
-    <script type="text/javascript" src="static/js/app.js"></script>
-
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
         <div id="control-pane">
-
-            <!--
-            <div>
-
-                <h3>Zoom <span id="min-degree-val">100%</span></h3>
-                <span>-5</span> <span> <input id="min-degree" type="range" min="-5" max="5" value="0" oninput="alert(this.value)" style="display:inline"></span> +5 <br>
-
-            </div>
-                -->
-
-            <span class="line"></span>
-            <p></p>
-
-            <h3>Main Options</h3>
-            <div>
-                <div class="dropdown" style="display:inline-block;">
-
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="depthMenu" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                        Graph Depth
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#" onclick="setDepth(1.0)">One Level</a></li>
-                        <li><a href="#" onclick="setDepth(1.5)">One Level with Interconnections</a></li>
-                        <li><a href="#" onclick="setDepth(2.0)">Two Levels</a></li>
-                    </ul>
-                </div>
-
-                <div class="dropdown" style="display:inline-block;">
-
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                        Table Type
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="#" onclick="setupTable('senders'); populateSenderTable2();">Top Senders</a></li>
-                        <li><a href="#" onclick="setupTable('recipients'); populateRecipientTable2();">Top
-                            Recipients</a></li>
-                        <li><a href="#" onclick="setupTable('sendersAndRecipients'); populatePairTable2();">Top Sender
-                            &#x27FA; Recipient Pairs</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="dropdown" style="display:inline-block;">
-
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu2" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                        Maximum Participants
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="#" onclick="setMaximumParticipants(2000000000);">Unlimited</a></li>
-                        <li><a href="#" onclick="setMaximumParticipants(1);">1</a></li>
-                        <li><a href="#" onclick="setMaximumParticipants(2);">2</a></li>
-                        <li><a href="#" onclick="setMaximumParticipants(5);">5</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="dropdown" style="display:inline-block;">
-
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="tableMenu3" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                        Geometry
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="#" onclick="setCytoscapeStyle('concentricNoOverlap');">Concentric - No Overlap</a>
-                        </li>
-                        <li><a href="#" onclick="setCytoscapeStyle('concentricWithOverlap');">Concentric</a></li>
-                        <li><a href="#" onclick="setCytoscapeStyle('grid');">Grid</a></li>
-                        <li><a href="#" onclick="setCytoscapeStyle('spread');">Spread</a></li>
-                        <li><a href="#" onclick="setCytoscapeStyle('cose');">CoSE</a></li>
-                        <li><a href="#" onclick="setCytoscapeStyle('cose-bilkent');">CoSE-Bilkent</a></li>
-                    </ul>
-
-                </div>
-
-
-            </div>
-
-
-            <div>
-
-
-                <h3 id="ParticipantTableTitle">Top Senders</h3>
-
-                <table class="table" id="senderRecipientsTable">
-                    <thead>
-                    <tr id="participantHeader">
-                        <th>Sender</th>
-                        <th>Recipient</th>
-                        <th>Count</th>
-                    </tr>
-                    </thead>
-                    <tbody id="senderRecipientsTableBody">
-
-                    </tbody>
-                </table>
-
-            </div>
-
-            <p></p>
-
-            <div>
-                <h3>Saved Search</h3>
-                <select id="savedSearchDropdown" name="cars"
-                        onchange="console.log(this.value); setSavedSearch(this.value)" style="font-size:18px;">
-                    <!--<option value="volvo">Volvo</option>-->
-                </select>
-                <!-- <button type="button" class="btn btn-default" onclick="runSavedSearch()">Execute</button> -->
-            </div>
-
-            <div>
-                <h3>Developer Utilities</h3>
-                <button type="button" class="btn btn-danger"
-                        onclick="location.href='/Home/GetSavedSearches?Levels=2&amp;EntityID=90714&amp;WorkspaceArtifactID=666&amp;SocialNetworkDatabaseName=DR_wtemp_SocialNetwork_EDDS666'">
-                    getJson
-                </button>
-            </div>
-
-            <div>
-                <!-- <h3>Case: </h3> -->
-                <!-- <h3>Root Communicator: 90714</h3> -->
-                <!-- <h3>ViewBag: ViewBag Placeholder</h3> -->
-            </div>
-
-
-            <div id="dump" class="hidden"></div>
+        {% block content2 %}
+        {% endblock %}
         </div>
-
-
     </div>
-
 
     <div id='wrapper'>
         <div id='threes'>
@@ -230,122 +81,7 @@
         </div>
     </div>
 
-    <script>
-
-        var MyAppUrlSettings = {
-            GetGraphGeneration10: '/Home/GetGraphGeneration10',
-            GetGraphGeneration15: '/Home/GetGraphGeneration15',
-            GetGraphGeneration20: '/Home/GetGraphGeneration20',
-            GetGraphGeneration10Case: '/Home/GetGraphGeneration10Case',
-            GetGraphGeneration15Case: '/Home/GetGraphGeneration15Case',
-            GetGraphGeneration20Case: '/Home/GetGraphGeneration20Case',
-            GetGraphGeneration10Filter: '/Home/GetGraphGeneration10Filter',
-            GetGraphGeneration15Filter: '/Home/GetGraphGeneration15Filter',
-            GetGraphGeneration20Filter: '/Home/GetGraphGeneration20Filter',
-            EdgeClicked1URL: '/Home/EdgeClicked1',
-            GetSavedSearches: '/Home/GetSavedSearches',
-            //RunSavedSearch: '/Home/RunSavedSearch',
-            //RunSavedSearchFilterByParticipants: '/Home/RunSavedSearchFilterByParticipants',
-            workspaceInfo: {"ArtifactID":666,"Session":[],"Keys":[],"SQLStatement":null,"CustomLastError":"","WorkspaceDatabaseName":"","WorkspaceIsMasterDatabase":"false","WorkspaceServerName":"","MasterDatabaseName":"","MasterIsMasterDatabase":"false","MasterServerName":"","CaseName":"","SocialNetworkDatabaseName":"DR_wtemp_SocialNetwork_EDDS666","RootCommunicator":90714,"Uri":"","BaseUri":"http://localhost:58638/","AuthenticationToken":"","IsInRelativity":1,"EdgeDocuments":null,"ActiveUserArtifactID":0,"ActiveUserAuditArtifactID":0,"ActiveUserWorkspaceArtifactID":0},
-            socialNetworkDatabaseName: 'DR_wtemp_SocialNetwork_EDDS666',
-            workspaceArtifactID: '666',
-            workspaceServerName: '',
-            RootCommunicator: '90714',
-            SelectedValue: 'xxx',
-            Depth: 1,
-            currentTableType: 'sender',
-            maximumParticipants: 2000000000,
-            savedSearch: -1,
-            senderEntityID: -1,
-            recipientEntityID: -1
-
-        } // Not really an error.
-
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "500px";
-            document.getElementById("wrapper").style.marginLeft = "500px";
-            document.getElementById("mySidenav").style.overflow = 'auto';
-            document.getElementById("threes").style.visibility = "hidden";
-            document.getElementById("status").style.visibility = "hidden";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("wrapper").style.marginLeft = "0";
-            document.getElementById("mySidenav").style.overflow = 'hidden';
-            document.getElementById("threes").style.visibility = "visible";
-            document.getElementById("status").style.visibility = "visible";
-        }
-
-        function toggleTop() {
-
-            if (document.getElementsByClassName("navbar")[0].style.display == "none")
-            {
-                document.getElementsByClassName("navbar")[0].style.display = "block";
-                document.getElementById("wrapper").style.height = "0%";
-                setupGraph();
-            }
-            else
-            {
-                document.getElementsByClassName("navbar")[0].style.display = "none"
-                document.getElementById("wrapper").style.height = "100%";
-                //document.getElementById("tall").style.height = "100%";
-                setupGraph();
-            }
-
-
-
-            //document.getElementsByClassName("navbar")[0].style.height = "0px";
-        }
-
-        function nightMode() {
-            alert("night mode!");
-        }
-
-
-        //Register a listener for the end of the transition of wrapper.
-        (function () {
-            var e = document.getElementById('wrapper');
-
-            function whichTransitionEvent() {
-                var t;
-                var el = document.createElement('fakeelement');
-                var transitions = {
-                    'transition': 'transitionend',
-                    'OTransition': 'oTransitionEnd',
-                    'MozTransition': 'transitionend',
-                    'WebkitTransition': 'webkitTransitionEnd'
-                }
-
-                for (t in transitions) {
-                    if (el.style[t] !== undefined) {
-                        return transitions[t];
-                    }
-                }
-            }
-
-            var transitionEvent = whichTransitionEvent();
-            transitionEvent && e.addEventListener(transitionEvent, function () {
-                //alert('Transition complete!  This is the callback, no library needed!');
-                setupGraph();
-            });
-
-            startFade = function () {
-                e.className += ' hide';
-            }
-        })();
-
-
-        window.addEventListener("resize", resizeWindow);
-
-        function resizeWindow()
-        {
-            setupGraph();
-        }
-
-
-    </script>
-
+    <script src="static/js/sidenav_main.js"></script>
 
 </div>
 
@@ -364,13 +100,7 @@
 <script src="https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="static/js/respond.js"></script>
-<script src="static/js/app.js"></script>
-<script src="static/js/appX.js"></script>
-<script src="static/js/cytoscape.js"></script>
-<script src="static/js/weaver.min.js"></script>
-<script src="static/js/cytoscape-spread.js"></script>
-<script src="static/js/cytoscape-cose-bilkent.js"></script>
+
 
 
 </body>
