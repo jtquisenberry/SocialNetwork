@@ -1,0 +1,7 @@
+CSharp_MVC/RelativityNetworkGraph/NetworkGraph/bin/
+*.cache
+CSharp_MVC/RelativityNetworkGraph/NetworkGraph/obj/
+
+CSharp_MVC/RelativityNetworkGraph/RelativityCommon/obj/
+CSharp_MVC/RelativityNetworkGraph/RelativityCommon/bin/
+CSharp_MVC/RelativityNetworkGraph/.vs/NetworkGraph/v14/.suo
