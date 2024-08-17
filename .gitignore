@@ -7,3 +7,4 @@ CSharp_MVC/RelativityNetworkGraph/RelativityCommon/bin/
 CSharp_MVC/RelativityNetworkGraph/.vs/NetworkGraph/v14/.suo
 *.pyc
 Python_Flask_Server/.idea/
+.idea/
